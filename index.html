@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <section class="todo-outer">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-8">
+          <h1>Student list</h1>
+          <div class="todo-inner">
+
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                id="searchtextbox" />
+            </form>
+
+            <div class="form-row">
+              <div class="form-input">
+                <label> Name:</label>
+
+                <input type="text" class="control-custom" placeholder="Name...." id="addname" />
+                <label>class:</label>
+
+                <input type="text" class="control-custom" placeholder="Class...." id="addclass" />
+                <label>address:</label>
+
+                <input type="text" class="control-custom" placeholder="Address...." id="addaddress" />
+                <input type="hidden" id="saveindex">
+              </div>
+           
+          
+          
+            </div>
+            <button type="button" class="btn-add" id="addtaskbtn">
+              Add Task
+            </button>
+            <button type="button" id="deleteallbtn" class="btn-delete">
+              Delete All
+            </button>
+            <button type="button" class="btn-add" id="savetaskbtn" style="display: none;">
+              Save Task
+            </button>
+            <div class="to-do-output">
+      
+              <table class="styled-table" id="addedtasklist">
+             
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
